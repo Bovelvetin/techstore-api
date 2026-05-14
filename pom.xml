@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>cl.techstore</groupId>
-	<artifactId>api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>techstore-api</artifactId>
+	<version>1.0.0</version>
 	<name/>
 	<description/>
 	<url/>
