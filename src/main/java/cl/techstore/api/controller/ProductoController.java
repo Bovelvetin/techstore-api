@@ -45,8 +45,8 @@ public class ProductoController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminar(@PathVariable Long id, Authentication authentication) {
-        productoService.eliminar(id);
-        auditPublisherService.publishAuditEvent("ELIMINAR", id, null, authentication.getName());
+        Producto eliminado = productoService.eliminar(id);
+        auditPublisherService.publishAuditEvent("ELIMINAR", eliminado.getId(), eliminado.getNombre(), authentication.getName());
         return ResponseEntity.noContent().build();
     }
 }
