@@ -9,6 +9,6 @@ public class HealthController {
 
     @GetMapping("/")
     public ResponseEntity<String> health() {
-        return ResponseEntity.ok("TechStore API is running");
+        return ResponseEntity.ok("TechStore API is running - v2");
     }
 }
